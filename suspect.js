@@ -9,7 +9,7 @@ module.exports = (function () {
       fs.readdir(path.dirname(url), function (err, files) {
         var name;
         callBack(err, files.some(function (file) {
-          return path.basename(url).toLowerCase() === (name = file.toLowerCase());
+          return path.basename(url).toLowerCase() === ((name = file).toLowerCase());
         }) ? name : null);
       });
     },
@@ -18,7 +18,7 @@ module.exports = (function () {
       try {
         var name;
         return fs.readdirSync(path.dirname(url)).some(function (file) {
-          return path.basename(url).toLowerCase() === (name = file.toLowerCase());
+          return path.basename(url).toLowerCase() === ((name = file).toLowerCase());
         }) ? name : null;
       } catch (ex) {
         throw new TypeError(ex.message); 
