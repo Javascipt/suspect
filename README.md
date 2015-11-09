@@ -1,5 +1,7 @@
 # suspect
 
+![travis-ci](https://travis-ci.org/Javascipt/suspect.svg)
+
 A package that allows you to deal with files and directories manipulations on case sensitive os. sometimes you need to get read a file that may be had different names on the OS. 
 
 >"On windows, `Readme.md`, `README.md` and `ReadMe.md` are the same, but Linux says NO!" - **someone** from **somewhere**... nevermind!
